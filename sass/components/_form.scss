@@ -1,0 +1,89 @@
+.form {
+  width: 100%;
+
+  &-wrapper {
+    border-radius: 10rem;
+    width: 100%;
+    margin: auto;
+    padding: 5rem 0rem;
+    padding-bottom: 5rem;
+
+    @include respond(tab-port) {
+      width: 50%;
+    }
+  }
+
+  &__group {
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    & textarea {
+      height: 20rem;
+    }
+  }
+
+  &__input {
+    &:invalid {
+      border: 2px solid $color-secondary-light;
+    }
+    &:valid {
+      border: 2px solid $color-primary;
+    }
+    &:placeholder-shown {
+      border: 2px solid $color-primary;
+    }
+
+    font-size: 2rem;
+    font-family: inherit;
+    color: inherit;
+    padding: 1.5rem 2rem;
+    border-radius: 3px;
+    background-color: rgba($color-white, 0.5);
+    width: 100%;
+    display: block;
+    transition: all 0.3s ease-in-out;
+
+    @include respond(tab-port) {
+      font-size: 1.5rem;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: $shadow-black-light;
+
+      &:invalid {
+        border: 2px solid $color-secondary-light;
+      }
+    }
+
+    &::-webkit-input-placeholder {
+      color: $color-grey-dark;
+    }
+  }
+
+  &__label {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 0.7rem;
+    display: block;
+    transform: translateY(-10rem);
+    transition: all 0.3s ease-in-out;
+    color: $color-grey-dark;
+    opacity: 1;
+  }
+
+  &__label--ta {
+    transform: translateY(-29rem);
+  }
+
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-5rem);
+  }
+}

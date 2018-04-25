@@ -1,0 +1,88 @@
+.heading-primary {
+  text-transform: uppercase;
+  color: $color-white;
+  margin-bottom: 6rem;
+  backface-visibility: hidden;
+
+  &--main {
+    display: block;
+    font-size: 5rem;
+    font-weight: 500;
+    letter-spacing: 2rem;
+
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+
+    @include respond(tab-port) {
+      font-size: 6rem;
+      letter-spacing: 2rem;
+    }
+  }
+
+  &--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1.9rem;
+    margin-left: 0.3rem;
+
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+
+    @include respond(tab-port) {
+      letter-spacing: 3.7rem;
+    }
+    @include respond(desktop) {
+      letter-spacing: 2.7rem;
+    }
+  }
+}
+
+.heading-secondary {
+  font-size: 7rem;
+  color: $color-grey-dark;
+  font-weight: 200;
+  margin-bottom: 2rem;
+
+  @include respond(tab-port) { 
+    font-size: 5rem;
+  }
+
+  &::first-letter {
+    @include firstLetterBorderBottom(#6fcea8);
+  }
+
+  &--white {
+    color: $color-white;
+    &::first-letter {
+      @include firstLetterBorderBottom($color-white);
+    }
+  }
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 2rem;
+
+  @include respond(tab-port) {
+    font-size: 2rem;
+  
+  }
+}
+
+.about-me__paragraph {
+  font-size: 2.2rem;
+  letter-spacing: 0.2rem;
+  color: $color-grey-dark;
+  text-align: justify;
+  font-weight: 300;
+  line-height: 3.3rem;
+
+  @include respond(desktop) {
+    font-size: 1.8rem;
+  }
+}

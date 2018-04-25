@@ -1,9 +1,867 @@
-<html>
-  <head>
-    <title>Sample "Hello, World" Application</title>
-  </head>
-  <body bgcolor=white>
+<!DOCTYPE html>
+<html lang="en">
 
-    <h1>Hello from jorgemoller.com!</h1>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/vendors/animate.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <title>Jorge Moller | Personal Website</title>
+</head>
+
+<body>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="#header" class="navigation__link">
+                        <span>01</span>
+                        </span>Home</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#about-me" class="navigation__link">
+                        <span>02</span>
+                        </span>About me</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#work-experience" class="navigation__link">
+                        <span>03</span>
+                        </span>Work experience</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#skills" class="navigation__link">
+                        <span>04</span>
+                        </span>Skills</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#portfolio" class="navigation__link">
+                        <span>05</span>
+                        </span>Portfolio</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#contact-me" class="navigation__link">
+                        <span>06</span>
+                        </span>Contact me</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <header id="header" class="header">
+        <div class="header__logo-box">
+            <img class="header__logo" src="img/jm-logo.png" alt="logo">
+
+        </div>
+        <div class="header__text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary--main">Fullstack</span>
+                <span class="heading-primary--sub">Web developer</span>
+            </h1>
+
+            <a href="#portfolio" class="btn btn--white btn--animated">See My Work</a>
+    </header>
+
+    <main>
+
+        <section id="about-me" class="about-me js--wp-1">
+
+
+            <div class="row">
+                <div class="col-4-of-4">
+                    <div class="u-padding-top-big">
+                        <h2 class="heading-secondary u-margin-bottom-small">
+                            About me
+                        </h2>
+                    </div>
+
+
+                    <p class="about-me__paragraph">
+                        I am a fullstack web developer based in Uruguay. I have been working in the web/ IT industry for the past 8 years now and
+                        have an extensive experience in both technical and business related.
+                        <br>
+                        <br> I would describe myself as a self-motivated worker, agile learner and proactive person who is always
+                        trying to learn and improve with the purpose of always contributing something new to my projects.
+
+                    </p>
+
+                    <div class="u-center-text">
+                        <a target="_blank" href="cv/cv_english.pdf" class="btn btn--green btn--animated u-margin-top-small">Download CV</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="work-experience" class="work-experience">
+            <div class="row">
+                <div class="col-4-of-4">
+                    <div class="u-padding-top-medium">
+                        <h2 class="heading-secondary u-margin-bottom-small">
+                            Work Experience
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-box js--wp-2">
+                <div class="row">
+
+                    <div class="col-3-of-4">
+                        <h3 class="experience-box__heading--desktop">
+                            Freelance Fullstack Developer
+                        </h3>
+                        <p class="experience-box__paragraph--desktop">
+                            I worked as a freelance fullstack developer on personal projects and personal clients.
+                            <br>
+                            <br> Some of the more significant:
+                            <br>
+
+                            <span>Company website and project management software for client; Servicios Tecnicos. </span>
+                            <br>
+                            <span>Company website for client; Baterias Toro</span>
+                            <br>
+                            <span>Developed an ecommerce platform implemented by several clients.</span>
+
+                            <br>
+                            <br>Tech stack: React JS, Redux, SASS + styled components, Node JS (Express), Mongo db.
+
+
+                        </p>
+                    </div>
+
+                    <div class="col-1-of-4">
+                        <div class="experience-box__period experience-box__period--right">
+                            <div>
+                                <span class="experience-box__period-year">
+                                    2016
+                                </span>
+                                <span class="experience-box__period-year">
+                                    2018
+                                </span>
+                            </div>
+                            <h3 class="experience-box__heading--mobile">
+                                Freelance Fullstack Developer
+                            </h3>
+                            <p class="experience-box__paragraph--mobile">
+
+                                I worked as a freelance fullstack developer on personal projects and personal clients.
+                                <br>
+                                <br>I was able to develop a deep undeerstanding on the following technologies: React JS, Redux,
+                                SASS + styled components, Node JS (Express), Mongo db.
+
+
+
+
+                            </p>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+            <div class="experience-box js--wp-3">
+                <div class="row">
+                    <div class="col-1-of-4">
+                        <div class="experience-box__period experience-box__period--left ">
+                            <div>
+                                <span class="experience-box__period-year">
+                                    2014
+                                </span>
+                                <span class="experience-box__period-year">
+                                    2016
+                                </span>
+                            </div>
+
+                            <h3 class="experience-box__heading--mobile">
+                                Integra
+                            </h3>
+                            <p class="experience-box__paragraph--mobile">
+                                I worked as a Senior Frontend developer at Integra ccs.
+                                <br>
+                                <br> As a Frontend developer me and my team were responsible for the production, modification
+                                and maintenance of uContact, the main software platform of Integra. To do so, we are using
+                                cutting edge technology, HTML5 (web RTC, web sockets, web workers, audio API, drag and drop,
+                                desktop notifications, client side storage and more) , CSS, Bootstrap, Responsive Design,
+                                Javascript (no fancy frameworks, just plain old javascript), jquery, jsDOC.
+                                <br>
+                                <br>
+
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-3-of-4">
+                        <h3 class="experience-box__heading--desktop">
+                            Integra
+                        </h3>
+                        <p class="experience-box__paragraph--desktop">
+                            I worked as a Senior Frontend developer at Integra ccs.
+                            <br>
+                            <br> As a Frontend developer me and my team were responsible for the production, modification and
+                            maintenance of uContact, the main software platform of Integra. To do so, we are using cutting
+                            edge technology, HTML5 (web RTC, web sockets, web workers, audio API, drag and drop, desktop
+                            notifications, client side storage and more) , CSS, Bootstrap, Responsive Design, Javascript
+                            (no fancy frameworks, just plain old javascript), jquery, jsDOC.
+                            <br>
+                            <br>
+
+
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="experience-box js--wp-4">
+                <div class="row">
+
+                    <div class="col-3-of-4">
+                        <h3 class="experience-box__heading--desktop">
+                            Think Spot
+                        </h3>
+                        <p class="experience-box__paragraph--desktop">
+                            Senior Web Developer at Think Spot.
+                            <br>
+                            <br> Netsuite developer at Think Spot mainly focus on two areas, e-commerce customization to several
+                            customers as per their business needs and suitetalk web services integration with .NET
+                            <br>
+                            <br> Tech Stack: jQuery, Suitescripts, HTML5, CSS3, Suitetalk WS, C#, .NetFramework.
+
+                        </p>
+                    </div>
+
+                    <div class="col-1-of-4">
+                        <div class="experience-box__period experience-box__period--right">
+                            <div>
+                                <span class="experience-box__period-year">
+                                    2013
+                                </span>
+                                <span class="experience-box__period-year">
+                                    2014
+                                </span>
+                            </div>
+                            <h3 class="experience-box__heading--mobile">
+                                Think Spot
+                            </h3>
+                            <p class="experience-box__paragraph--mobile">
+                                Senior Web Developer at Think Spot.
+                                <br>
+                                <br> Netsuite developer at Think Spot mainly focus on two areas, e-commerce customization to
+                                several customers as per their business needs and suitetalk web services integration with
+                                .NET
+                                <br>
+                                <br> Tech Stack: jQuery, Suitescripts, HTML5, CSS3, Suitetalk WS, C#, .NetFramework.
+
+                            </p>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="experience-box js--wp-5">
+                <div class="row">
+                    <div class="col-1-of-4">
+                        <div class="experience-box__period experience-box__period--left u-tall-height">
+                            <div>
+                                <span class="experience-box__period-year">
+                                    2014
+                                </span>
+                                <span class="experience-box__period-year">
+                                    2016
+                                </span>
+                            </div>
+
+                            <h3 class="experience-box__heading--mobile">
+                                Booking Force
+                            </h3>
+                            <p class="experience-box__paragraph--mobile">
+                                Full stack web developer at bookingforce, responsible for development and maintenance of a digital marketing and booking
+                                engine system for hotels
+                                <br>
+                                <br> Among my tasks was: developing new features, bug fixes, client support and web design.
+                                <br>
+                                <br> I worked with a variety of technologies from frontend, HTML, CSS, Bootstrap, to server-side,
+                                C#, ASP.NET, including SQL Server 2008 as data store and LINQ.
+                                <br>
+                                <br> I was able to develop not only programming skills but also clear communication skills to
+                                enhance the relationship with the client.
+
+
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-3-of-4">
+                        <h3 class="experience-box__heading--desktop">
+                            Booking Force
+                        </h3>
+                        <p class="experience-box__paragraph--desktop">
+                            Full stack web developer at bookingforce, responsible for development and maintenance of a digital marketing and booking
+                            engine system for hotels
+                            <br>
+                            <br> Among my tasks were: developing new features, bug fixes, client support and web design.
+                            <br>
+                            <br> I worked with a variety of technologies from frontend, HTML, CSS, Bootstrap, to server-side,
+                            C#, ASP.NET, including SQL Server 2008 as data store and LINQ.
+                            <br>
+                            <br> I was able to develop not only programming skills but also clear communication skills to enhance
+                            the relationship with the client.
+
+
+
+
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="experience-box js--wp-6">
+                <div class="row">
+
+                    <div class="col-3-of-4">
+                        <h3 class="experience-box__heading--desktop">
+                            TATA Consultancy Services
+                        </h3>
+                        <p class="experience-box__paragraph--desktop">
+                            IT support specialist at TATA Consultancy Services providing technical support to corporate clients.
+                            <br>
+                            <br> Experience in ASP.NET, SQL Server 2008, Web Services, ADO.NET, Windows Forms.
+                            <br>
+                            <br> Self-motivated to develop different automation tools to improve processes and enhance support,
+                            such as a monitoring software that retrieved the records that took longer by the server to proccess
+
+
+
+
+                        </p>
+                    </div>
+
+                    <div class="col-1-of-4">
+                        <div class="experience-box__period experience-box__period--right ">
+                            <div>
+                                <span class="experience-box__period-year">
+                                    2010
+                                </span>
+                                <span class="experience-box__period-year">
+                                    2012
+                                </span>
+                            </div>
+                            <h3 class="experience-box__heading--mobile">
+                                TATA Consultancy Services
+                            </h3>
+                            <p class="experience-box__paragraph--mobile">
+                                IT support specialist at TATA Consultancy Services providing technical support to corporate clients.
+                                <br>
+                                <br> Experience in ASP.NET, SQL Server 2008, Web Services, ADO.NET, Windows Forms.
+                                <br>
+                                <br> Self-motivated to develop different automation tools to improve processes and enhance support,
+                                such as a monitoring software that retrieved the records that took longer by the server to
+                                proccess
+
+
+
+
+                            </p>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills js--wp-2">
+            <div class="row">
+                <div class="col-4-of-4">
+
+                    <h2 class="heading-secondary ">
+                        Skills
+                    </h2>
+
+                </div>
+            </div>
+
+            <div class="row js--wp-plants-1">
+                <div class="col-1-of-3">
+                    <div class="u-center-text">
+
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg data-name="Layer 1" viewBox="0 0 115.25 287.26" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="linear-gradient-javascript" x1="77.65" y1="299.89" x2="77.65" y2="12.63" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0" stop-color="#7ed56f" />
+                                    <stop offset="0.76" stop-color="#28b485" />
+                                    <stop offset="0.96" stop-color="#f7f7f7" />
+                                </linearGradient>
+                            </defs>
+                            <title>javascript</title>
+                            <path class="plant plant--javascript" transform="translate(-20.03 -12.63)" d="M102.68,124.75a21.47,21.47,0,0,1-13.48,2.15,13.59,13.59,0,0,1-5.76-2.44c-.82-.62-4-3-4-4.19a4.55,4.55,0,0,0,0,1c.09.42.14.73.15.79,1.23,4.26,1,17.17,1,17.17s-.2,14.51-.09,21.15c0,1.87.12,3.69.12,3.69.08,1.65.17,3,.25,4v50.1l31.61,14.31v11.71l8.54,4.55a7.23,7.23,0,1,1-2.9,4.55l-10.45-5.73V236.16L80.87,223.8v15.74l17.17,9v21.59l6.43,5a7.18,7.18,0,1,1-3.6,3.79L93.48,273V252.16l-12.36-6.37v40.3a7.19,7.19,0,1,1-5.78.11V263L58,271.15v2.71a7.18,7.18,0,1,1-4.68,0V268l22-12V210.67L66,215.22v22.11L38.73,253.07l.05,1.84a7.18,7.18,0,1,1-4.86,0v-5.78L61,233.95V211.19l14.38-6.5V192.41L44.48,207.84v4.1a7.17,7.17,0,1,1-4.5-.14V204l35.36-18V168h0q.18-10.42.35-20.84c-9.8,5.39-17.53,4.43-25.44-3.39C47.52,141,37.42,129,32.88,130c8.73-1.92,20.52-5.68,29-1,1.74,1,12.23,12.47,13.89,16.72l1.19-44C71.07,111,61,112.3,51.45,108,40.87,103.3,33.06,94.61,27,84.94c-1.25-2-4-6.89-7-5.8.1,0,17.54-6.78,33.57-2.5,15.82,4.23,23.11,24.42,23.33,25l.45-16.19C57,64.37,68,33.1,91.1,19.14,95,16.8,99.42,14,103.9,13c.2,0,2.95-.31,3-.35-2.45,3.57-2.31,9.73-1.89,13.76C106.59,42,111.83,60,99.07,72.6a37.66,37.66,0,0,1-11.58,7.29c-1.51.66-9,3-8.9,5.16l1,33.08c2.28-9.43,9.11-18.35,17.86-22.53C109.13,90,123,91.48,135,95.24c1.5.47-2.56,2.1-8.33,6.47C117.68,108.48,112.89,119.57,102.68,124.75Zm-5.37,16.47c-7.24-1.69-14,2.21-16.82,8.93,0,0,3.71,9.26,11.41,6.11s7-8.64,12.65-11.07c-.06,0-2.79-2.18-3.19-2.41A15.31,15.31,0,0,0,97.31,141.22Z"
+                            />
+                        </svg>
+                    </div>
+                    <h3 class="heading-tertiary">
+                        Javascript (ES6)
+                    </h3>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="u-center-text">
+
+                        <div style="max-height: 40rem;">
+                            <?xml version="1.0" encoding="UTF-8"?>
+                            <svg data-name="Layer 1" viewBox="0 0 115.25 287.26" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="linear-gradient-react" x1="77.65" y1="299.89" x2="77.65" y2="12.63" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0" stop-color="#7ed56f" />
+                                        <stop offset="0.76" stop-color="#28b485" />
+                                        <stop offset="0.96" stop-color="#f7f7f7" />
+                                    </linearGradient>
+                                </defs>
+                                <title>react</title>
+                                <path class="plant plant--react" transform="translate(-20.03 -12.63)" d="M102.68,124.75a21.47,21.47,0,0,1-13.48,2.15,13.59,13.59,0,0,1-5.76-2.44c-.82-.62-4-3-4-4.19a4.55,4.55,0,0,0,0,1c.09.42.14.73.15.79,1.23,4.26,1,17.17,1,17.17s-.2,14.51-.09,21.15c0,1.87.12,3.69.12,3.69.08,1.65.17,3,.25,4v50.1l31.61,14.31v11.71l8.54,4.55a7.23,7.23,0,1,1-2.9,4.55l-10.45-5.73V236.16L80.87,223.8v15.74l17.17,9v21.59l6.43,5a7.18,7.18,0,1,1-3.6,3.79L93.48,273V252.16l-12.36-6.37v40.3a7.19,7.19,0,1,1-5.78.11V263L58,271.15v2.71a7.18,7.18,0,1,1-4.68,0V268l22-12V210.67L66,215.22v22.11L38.73,253.07l.05,1.84a7.18,7.18,0,1,1-4.86,0v-5.78L61,233.95V211.19l14.38-6.5V192.41L44.48,207.84v4.1a7.17,7.17,0,1,1-4.5-.14V204l35.36-18V168h0q.18-10.42.35-20.84c-9.8,5.39-17.53,4.43-25.44-3.39C47.52,141,37.42,129,32.88,130c8.73-1.92,20.52-5.68,29-1,1.74,1,12.23,12.47,13.89,16.72l1.19-44C71.07,111,61,112.3,51.45,108,40.87,103.3,33.06,94.61,27,84.94c-1.25-2-4-6.89-7-5.8.1,0,17.54-6.78,33.57-2.5,15.82,4.23,23.11,24.42,23.33,25l.45-16.19C57,64.37,68,33.1,91.1,19.14,95,16.8,99.42,14,103.9,13c.2,0,2.95-.31,3-.35-2.45,3.57-2.31,9.73-1.89,13.76C106.59,42,111.83,60,99.07,72.6a37.66,37.66,0,0,1-11.58,7.29c-1.51.66-9,3-8.9,5.16l1,33.08c2.28-9.43,9.11-18.35,17.86-22.53C109.13,90,123,91.48,135,95.24c1.5.47-2.56,2.1-8.33,6.47C117.68,108.48,112.89,119.57,102.68,124.75Zm-5.37,16.47c-7.24-1.69-14,2.21-16.82,8.93,0,0,3.71,9.26,11.41,6.11s7-8.64,12.65-11.07c-.06,0-2.79-2.18-3.19-2.41A15.31,15.31,0,0,0,97.31,141.22Z"
+                                />
+                            </svg>
+
+
+                        </div>
+                    </div>
+                    <h3 class="heading-tertiary">
+                        React JS
+                    </h3>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="u-center-text">
+
+
+
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg data-name="Layer 1" viewBox="0 0 115.25 287.26" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="linear-gradient-sass" x1="77.65" y1="299.89" x2="77.65" y2="12.63" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0" stop-color="#7ed56f" />
+                                    <stop offset="0.76" stop-color="#28b485" />
+                                    <stop offset="0.90" stop-color="#f7f7f7" />
+                                </linearGradient>
+                            </defs>
+                            <title>sass</title>
+                            <path class="plant plant--sass" transform="translate(-20.03 -12.63)" d="M102.68,124.75a21.47,21.47,0,0,1-13.48,2.15,13.59,13.59,0,0,1-5.76-2.44c-.82-.62-4-3-4-4.19a4.55,4.55,0,0,0,0,1c.09.42.14.73.15.79,1.23,4.26,1,17.17,1,17.17s-.2,14.51-.09,21.15c0,1.87.12,3.69.12,3.69.08,1.65.17,3,.25,4v50.1l31.61,14.31v11.71l8.54,4.55a7.23,7.23,0,1,1-2.9,4.55l-10.45-5.73V236.16L80.87,223.8v15.74l17.17,9v21.59l6.43,5a7.18,7.18,0,1,1-3.6,3.79L93.48,273V252.16l-12.36-6.37v40.3a7.19,7.19,0,1,1-5.78.11V263L58,271.15v2.71a7.18,7.18,0,1,1-4.68,0V268l22-12V210.67L66,215.22v22.11L38.73,253.07l.05,1.84a7.18,7.18,0,1,1-4.86,0v-5.78L61,233.95V211.19l14.38-6.5V192.41L44.48,207.84v4.1a7.17,7.17,0,1,1-4.5-.14V204l35.36-18V168h0q.18-10.42.35-20.84c-9.8,5.39-17.53,4.43-25.44-3.39C47.52,141,37.42,129,32.88,130c8.73-1.92,20.52-5.68,29-1,1.74,1,12.23,12.47,13.89,16.72l1.19-44C71.07,111,61,112.3,51.45,108,40.87,103.3,33.06,94.61,27,84.94c-1.25-2-4-6.89-7-5.8.1,0,17.54-6.78,33.57-2.5,15.82,4.23,23.11,24.42,23.33,25l.45-16.19C57,64.37,68,33.1,91.1,19.14,95,16.8,99.42,14,103.9,13c.2,0,2.95-.31,3-.35-2.45,3.57-2.31,9.73-1.89,13.76C106.59,42,111.83,60,99.07,72.6a37.66,37.66,0,0,1-11.58,7.29c-1.51.66-9,3-8.9,5.16l1,33.08c2.28-9.43,9.11-18.35,17.86-22.53C109.13,90,123,91.48,135,95.24c1.5.47-2.56,2.1-8.33,6.47C117.68,108.48,112.89,119.57,102.68,124.75Zm-5.37,16.47c-7.24-1.69-14,2.21-16.82,8.93,0,0,3.71,9.26,11.41,6.11s7-8.64,12.65-11.07c-.06,0-2.79-2.18-3.19-2.41A15.31,15.31,0,0,0,97.31,141.22Z"
+                            />
+                        </svg>
+                    </div>
+                    <h3 class="heading-tertiary">
+                        Sass + Styled Components
+                    </h3>
+                </div>
+            </div>
+
+            <div class="row js--wp-plants-2">
+                <div class="col-1-of-3">
+                    <div class="u-center-text">
+
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg data-name="Layer 1" viewBox="0 0 115.25 287.26" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="linear-gradient-node" x1="77.65" y1="299.89" x2="77.65" y2="12.63" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0" stop-color="#7ed56f" />
+                                    <stop offset="0.76" stop-color="#28b485" />
+                                    <stop offset="0.90" stop-color="#f7f7f7" />
+                                </linearGradient>
+                            </defs>
+                            <title>node</title>
+                            <path class="plant plant--node" transform="translate(-20.03 -12.63)" d="M102.68,124.75a21.47,21.47,0,0,1-13.48,2.15,13.59,13.59,0,0,1-5.76-2.44c-.82-.62-4-3-4-4.19a4.55,4.55,0,0,0,0,1c.09.42.14.73.15.79,1.23,4.26,1,17.17,1,17.17s-.2,14.51-.09,21.15c0,1.87.12,3.69.12,3.69.08,1.65.17,3,.25,4v50.1l31.61,14.31v11.71l8.54,4.55a7.23,7.23,0,1,1-2.9,4.55l-10.45-5.73V236.16L80.87,223.8v15.74l17.17,9v21.59l6.43,5a7.18,7.18,0,1,1-3.6,3.79L93.48,273V252.16l-12.36-6.37v40.3a7.19,7.19,0,1,1-5.78.11V263L58,271.15v2.71a7.18,7.18,0,1,1-4.68,0V268l22-12V210.67L66,215.22v22.11L38.73,253.07l.05,1.84a7.18,7.18,0,1,1-4.86,0v-5.78L61,233.95V211.19l14.38-6.5V192.41L44.48,207.84v4.1a7.17,7.17,0,1,1-4.5-.14V204l35.36-18V168h0q.18-10.42.35-20.84c-9.8,5.39-17.53,4.43-25.44-3.39C47.52,141,37.42,129,32.88,130c8.73-1.92,20.52-5.68,29-1,1.74,1,12.23,12.47,13.89,16.72l1.19-44C71.07,111,61,112.3,51.45,108,40.87,103.3,33.06,94.61,27,84.94c-1.25-2-4-6.89-7-5.8.1,0,17.54-6.78,33.57-2.5,15.82,4.23,23.11,24.42,23.33,25l.45-16.19C57,64.37,68,33.1,91.1,19.14,95,16.8,99.42,14,103.9,13c.2,0,2.95-.31,3-.35-2.45,3.57-2.31,9.73-1.89,13.76C106.59,42,111.83,60,99.07,72.6a37.66,37.66,0,0,1-11.58,7.29c-1.51.66-9,3-8.9,5.16l1,33.08c2.28-9.43,9.11-18.35,17.86-22.53C109.13,90,123,91.48,135,95.24c1.5.47-2.56,2.1-8.33,6.47C117.68,108.48,112.89,119.57,102.68,124.75Zm-5.37,16.47c-7.24-1.69-14,2.21-16.82,8.93,0,0,3.71,9.26,11.41,6.11s7-8.64,12.65-11.07c-.06,0-2.79-2.18-3.19-2.41A15.31,15.31,0,0,0,97.31,141.22Z"
+                            />
+                        </svg>
+                    </div>
+                    <h3 class="heading-tertiary">
+                        Node JS
+                    </h3>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="u-center-text">
+
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg data-name="Layer 1" viewBox="0 0 115.25 287.26" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="linear-gradient-mongo" x1="77.65" y1="299.89" x2="77.65" y2="12.63" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0" stop-color="#7ed56f" />
+                                    <stop offset="0.70" stop-color="#28b485" />
+                                    <stop offset="0.84" stop-color="#f7f7f7" />
+                                </linearGradient>
+                            </defs>
+                            <title>mongo</title>
+                            <path class="plant plant--mongo" transform="translate(-20.03 -12.63)" d="M102.68,124.75a21.47,21.47,0,0,1-13.48,2.15,13.59,13.59,0,0,1-5.76-2.44c-.82-.62-4-3-4-4.19a4.55,4.55,0,0,0,0,1c.09.42.14.73.15.79,1.23,4.26,1,17.17,1,17.17s-.2,14.51-.09,21.15c0,1.87.12,3.69.12,3.69.08,1.65.17,3,.25,4v50.1l31.61,14.31v11.71l8.54,4.55a7.23,7.23,0,1,1-2.9,4.55l-10.45-5.73V236.16L80.87,223.8v15.74l17.17,9v21.59l6.43,5a7.18,7.18,0,1,1-3.6,3.79L93.48,273V252.16l-12.36-6.37v40.3a7.19,7.19,0,1,1-5.78.11V263L58,271.15v2.71a7.18,7.18,0,1,1-4.68,0V268l22-12V210.67L66,215.22v22.11L38.73,253.07l.05,1.84a7.18,7.18,0,1,1-4.86,0v-5.78L61,233.95V211.19l14.38-6.5V192.41L44.48,207.84v4.1a7.17,7.17,0,1,1-4.5-.14V204l35.36-18V168h0q.18-10.42.35-20.84c-9.8,5.39-17.53,4.43-25.44-3.39C47.52,141,37.42,129,32.88,130c8.73-1.92,20.52-5.68,29-1,1.74,1,12.23,12.47,13.89,16.72l1.19-44C71.07,111,61,112.3,51.45,108,40.87,103.3,33.06,94.61,27,84.94c-1.25-2-4-6.89-7-5.8.1,0,17.54-6.78,33.57-2.5,15.82,4.23,23.11,24.42,23.33,25l.45-16.19C57,64.37,68,33.1,91.1,19.14,95,16.8,99.42,14,103.9,13c.2,0,2.95-.31,3-.35-2.45,3.57-2.31,9.73-1.89,13.76C106.59,42,111.83,60,99.07,72.6a37.66,37.66,0,0,1-11.58,7.29c-1.51.66-9,3-8.9,5.16l1,33.08c2.28-9.43,9.11-18.35,17.86-22.53C109.13,90,123,91.48,135,95.24c1.5.47-2.56,2.1-8.33,6.47C117.68,108.48,112.89,119.57,102.68,124.75Zm-5.37,16.47c-7.24-1.69-14,2.21-16.82,8.93,0,0,3.71,9.26,11.41,6.11s7-8.64,12.65-11.07c-.06,0-2.79-2.18-3.19-2.41A15.31,15.31,0,0,0,97.31,141.22Z"
+                            />
+                        </svg>
+                    </div>
+                    <h3 class="heading-tertiary">
+                        Mongo DB
+                    </h3>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="u-center-text">
+
+
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg data-name="Layer 1" viewBox="0 0 115.25 287.26" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="linear-gradient-graphql" x1="77.65" y1="299.89" x2="77.65" y2="12.63" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0" stop-color="#7ed56f" />
+                                    <stop offset="0.70" stop-color="#28b485" />
+                                    <stop offset="0.84" stop-color="#f7f7f7" />
+                                </linearGradient>
+                            </defs>
+                            <title>Express</title>
+                            <path class="plant plant--graphql" transform="translate(-20.03 -12.63)" d="M102.68,124.75a21.47,21.47,0,0,1-13.48,2.15,13.59,13.59,0,0,1-5.76-2.44c-.82-.62-4-3-4-4.19a4.55,4.55,0,0,0,0,1c.09.42.14.73.15.79,1.23,4.26,1,17.17,1,17.17s-.2,14.51-.09,21.15c0,1.87.12,3.69.12,3.69.08,1.65.17,3,.25,4v50.1l31.61,14.31v11.71l8.54,4.55a7.23,7.23,0,1,1-2.9,4.55l-10.45-5.73V236.16L80.87,223.8v15.74l17.17,9v21.59l6.43,5a7.18,7.18,0,1,1-3.6,3.79L93.48,273V252.16l-12.36-6.37v40.3a7.19,7.19,0,1,1-5.78.11V263L58,271.15v2.71a7.18,7.18,0,1,1-4.68,0V268l22-12V210.67L66,215.22v22.11L38.73,253.07l.05,1.84a7.18,7.18,0,1,1-4.86,0v-5.78L61,233.95V211.19l14.38-6.5V192.41L44.48,207.84v4.1a7.17,7.17,0,1,1-4.5-.14V204l35.36-18V168h0q.18-10.42.35-20.84c-9.8,5.39-17.53,4.43-25.44-3.39C47.52,141,37.42,129,32.88,130c8.73-1.92,20.52-5.68,29-1,1.74,1,12.23,12.47,13.89,16.72l1.19-44C71.07,111,61,112.3,51.45,108,40.87,103.3,33.06,94.61,27,84.94c-1.25-2-4-6.89-7-5.8.1,0,17.54-6.78,33.57-2.5,15.82,4.23,23.11,24.42,23.33,25l.45-16.19C57,64.37,68,33.1,91.1,19.14,95,16.8,99.42,14,103.9,13c.2,0,2.95-.31,3-.35-2.45,3.57-2.31,9.73-1.89,13.76C106.59,42,111.83,60,99.07,72.6a37.66,37.66,0,0,1-11.58,7.29c-1.51.66-9,3-8.9,5.16l1,33.08c2.28-9.43,9.11-18.35,17.86-22.53C109.13,90,123,91.48,135,95.24c1.5.47-2.56,2.1-8.33,6.47C117.68,108.48,112.89,119.57,102.68,124.75Zm-5.37,16.47c-7.24-1.69-14,2.21-16.82,8.93,0,0,3.71,9.26,11.41,6.11s7-8.64,12.65-11.07c-.06,0-2.79-2.18-3.19-2.41A15.31,15.31,0,0,0,97.31,141.22Z"
+                            />
+                        </svg>
+                    </div>
+                    <h3 class="heading-tertiary">
+                        Express
+                    </h3>
+                </div>
+            </div>
+
+            <div class="row js--wp-plants-3">
+                <div class="col-1-of-3">
+                    <div class="u-center-text">
+
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg data-name="Layer 1" viewBox="0 0 115.25 287.26" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="linear-gradient-illustrator" x1="77.65" y1="299.89" x2="77.65" y2="12.63" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0" stop-color="#7ed56f" />
+                                    <stop offset="0.70" stop-color="#28b485" />
+                                    <stop offset="0.80" stop-color="#f7f7f7" />
+                                </linearGradient>
+                            </defs>
+                            <title>illustrator</title>
+                            <path class="plant plant--illustrator" transform="translate(-20.03 -12.63)" d="M102.68,124.75a21.47,21.47,0,0,1-13.48,2.15,13.59,13.59,0,0,1-5.76-2.44c-.82-.62-4-3-4-4.19a4.55,4.55,0,0,0,0,1c.09.42.14.73.15.79,1.23,4.26,1,17.17,1,17.17s-.2,14.51-.09,21.15c0,1.87.12,3.69.12,3.69.08,1.65.17,3,.25,4v50.1l31.61,14.31v11.71l8.54,4.55a7.23,7.23,0,1,1-2.9,4.55l-10.45-5.73V236.16L80.87,223.8v15.74l17.17,9v21.59l6.43,5a7.18,7.18,0,1,1-3.6,3.79L93.48,273V252.16l-12.36-6.37v40.3a7.19,7.19,0,1,1-5.78.11V263L58,271.15v2.71a7.18,7.18,0,1,1-4.68,0V268l22-12V210.67L66,215.22v22.11L38.73,253.07l.05,1.84a7.18,7.18,0,1,1-4.86,0v-5.78L61,233.95V211.19l14.38-6.5V192.41L44.48,207.84v4.1a7.17,7.17,0,1,1-4.5-.14V204l35.36-18V168h0q.18-10.42.35-20.84c-9.8,5.39-17.53,4.43-25.44-3.39C47.52,141,37.42,129,32.88,130c8.73-1.92,20.52-5.68,29-1,1.74,1,12.23,12.47,13.89,16.72l1.19-44C71.07,111,61,112.3,51.45,108,40.87,103.3,33.06,94.61,27,84.94c-1.25-2-4-6.89-7-5.8.1,0,17.54-6.78,33.57-2.5,15.82,4.23,23.11,24.42,23.33,25l.45-16.19C57,64.37,68,33.1,91.1,19.14,95,16.8,99.42,14,103.9,13c.2,0,2.95-.31,3-.35-2.45,3.57-2.31,9.73-1.89,13.76C106.59,42,111.83,60,99.07,72.6a37.66,37.66,0,0,1-11.58,7.29c-1.51.66-9,3-8.9,5.16l1,33.08c2.28-9.43,9.11-18.35,17.86-22.53C109.13,90,123,91.48,135,95.24c1.5.47-2.56,2.1-8.33,6.47C117.68,108.48,112.89,119.57,102.68,124.75Zm-5.37,16.47c-7.24-1.69-14,2.21-16.82,8.93,0,0,3.71,9.26,11.41,6.11s7-8.64,12.65-11.07c-.06,0-2.79-2.18-3.19-2.41A15.31,15.31,0,0,0,97.31,141.22Z"
+                            />
+                        </svg>
+                    </div>
+                    <h3 class="heading-tertiary">
+                        Illustrator
+                    </h3>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="u-center-text">
+
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg data-name="Layer 1" viewBox="0 0 115.25 287.26" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="linear-gradient-sketch" x1="77.65" y1="299.89" x2="77.65" y2="12.63" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0" stop-color="#7ed56f" />
+                                    <stop offset="0.76" stop-color="#28b485" />
+                                    <stop offset="0.97" stop-color="#f7f7f7" />
+                                </linearGradient>
+                            </defs>
+                            <title>sketch</title>
+                            <path class="plant plant--sketch" transform="translate(-20.03 -12.63)" d="M102.68,124.75a21.47,21.47,0,0,1-13.48,2.15,13.59,13.59,0,0,1-5.76-2.44c-.82-.62-4-3-4-4.19a4.55,4.55,0,0,0,0,1c.09.42.14.73.15.79,1.23,4.26,1,17.17,1,17.17s-.2,14.51-.09,21.15c0,1.87.12,3.69.12,3.69.08,1.65.17,3,.25,4v50.1l31.61,14.31v11.71l8.54,4.55a7.23,7.23,0,1,1-2.9,4.55l-10.45-5.73V236.16L80.87,223.8v15.74l17.17,9v21.59l6.43,5a7.18,7.18,0,1,1-3.6,3.79L93.48,273V252.16l-12.36-6.37v40.3a7.19,7.19,0,1,1-5.78.11V263L58,271.15v2.71a7.18,7.18,0,1,1-4.68,0V268l22-12V210.67L66,215.22v22.11L38.73,253.07l.05,1.84a7.18,7.18,0,1,1-4.86,0v-5.78L61,233.95V211.19l14.38-6.5V192.41L44.48,207.84v4.1a7.17,7.17,0,1,1-4.5-.14V204l35.36-18V168h0q.18-10.42.35-20.84c-9.8,5.39-17.53,4.43-25.44-3.39C47.52,141,37.42,129,32.88,130c8.73-1.92,20.52-5.68,29-1,1.74,1,12.23,12.47,13.89,16.72l1.19-44C71.07,111,61,112.3,51.45,108,40.87,103.3,33.06,94.61,27,84.94c-1.25-2-4-6.89-7-5.8.1,0,17.54-6.78,33.57-2.5,15.82,4.23,23.11,24.42,23.33,25l.45-16.19C57,64.37,68,33.1,91.1,19.14,95,16.8,99.42,14,103.9,13c.2,0,2.95-.31,3-.35-2.45,3.57-2.31,9.73-1.89,13.76C106.59,42,111.83,60,99.07,72.6a37.66,37.66,0,0,1-11.58,7.29c-1.51.66-9,3-8.9,5.16l1,33.08c2.28-9.43,9.11-18.35,17.86-22.53C109.13,90,123,91.48,135,95.24c1.5.47-2.56,2.1-8.33,6.47C117.68,108.48,112.89,119.57,102.68,124.75Zm-5.37,16.47c-7.24-1.69-14,2.21-16.82,8.93,0,0,3.71,9.26,11.41,6.11s7-8.64,12.65-11.07c-.06,0-2.79-2.18-3.19-2.41A15.31,15.31,0,0,0,97.31,141.22Z"
+                            />
+                        </svg>
+                    </div>
+                    <h3 class="heading-tertiary">
+                        Sketch
+                    </h3>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="u-center-text">
+
+
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg data-name="Layer 1" viewBox="0 0 115.25 287.26" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="linear-gradient-photoshop" x1="77.65" y1="299.89" x2="77.65" y2="1.63" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0" stop-color="#7ed56f" />
+                                    <stop offset="0.60" stop-color="#28b485" />
+                                    <stop offset="0.70" stop-color="#f7f7f7" />
+                                </linearGradient>
+                            </defs>
+                            <title>photoshop</title>
+                            <path class="plant plant--photoshop" transform="translate(-20.03 -12.63)" d="M102.68,124.75a21.47,21.47,0,0,1-13.48,2.15,13.59,13.59,0,0,1-5.76-2.44c-.82-.62-4-3-4-4.19a4.55,4.55,0,0,0,0,1c.09.42.14.73.15.79,1.23,4.26,1,17.17,1,17.17s-.2,14.51-.09,21.15c0,1.87.12,3.69.12,3.69.08,1.65.17,3,.25,4v50.1l31.61,14.31v11.71l8.54,4.55a7.23,7.23,0,1,1-2.9,4.55l-10.45-5.73V236.16L80.87,223.8v15.74l17.17,9v21.59l6.43,5a7.18,7.18,0,1,1-3.6,3.79L93.48,273V252.16l-12.36-6.37v40.3a7.19,7.19,0,1,1-5.78.11V263L58,271.15v2.71a7.18,7.18,0,1,1-4.68,0V268l22-12V210.67L66,215.22v22.11L38.73,253.07l.05,1.84a7.18,7.18,0,1,1-4.86,0v-5.78L61,233.95V211.19l14.38-6.5V192.41L44.48,207.84v4.1a7.17,7.17,0,1,1-4.5-.14V204l35.36-18V168h0q.18-10.42.35-20.84c-9.8,5.39-17.53,4.43-25.44-3.39C47.52,141,37.42,129,32.88,130c8.73-1.92,20.52-5.68,29-1,1.74,1,12.23,12.47,13.89,16.72l1.19-44C71.07,111,61,112.3,51.45,108,40.87,103.3,33.06,94.61,27,84.94c-1.25-2-4-6.89-7-5.8.1,0,17.54-6.78,33.57-2.5,15.82,4.23,23.11,24.42,23.33,25l.45-16.19C57,64.37,68,33.1,91.1,19.14,95,16.8,99.42,14,103.9,13c.2,0,2.95-.31,3-.35-2.45,3.57-2.31,9.73-1.89,13.76C106.59,42,111.83,60,99.07,72.6a37.66,37.66,0,0,1-11.58,7.29c-1.51.66-9,3-8.9,5.16l1,33.08c2.28-9.43,9.11-18.35,17.86-22.53C109.13,90,123,91.48,135,95.24c1.5.47-2.56,2.1-8.33,6.47C117.68,108.48,112.89,119.57,102.68,124.75Zm-5.37,16.47c-7.24-1.69-14,2.21-16.82,8.93,0,0,3.71,9.26,11.41,6.11s7-8.64,12.65-11.07c-.06,0-2.79-2.18-3.19-2.41A15.31,15.31,0,0,0,97.31,141.22Z"
+                            />
+                        </svg>
+                    </div>
+                    <h3 class="heading-tertiary">
+                        Photoshop
+                    </h3>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="portfolio" class="portfolio">
+
+
+            <div class="row">
+                <div class="col-4-of-4">
+                    <div class="u-padding-top-medium">
+                        <h2 class="heading-secondary heading-secondary--white">
+                            My portfolio
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="portfolio__filter">
+                    <ul class="portfolio__filter-list">
+                        <li class="portfolio__filter-item">
+                            <a name="web-design" href="" class="portfolio__filter-link">Web design</a>
+                        </li>
+                        <li class="portfolio__filter-item">
+                            <a name="web-apps" href="" class="portfolio__filter-link">Web Apps</a>
+                        </li>
+                        <li class="portfolio__filter-item">
+                            <a name="illustrator" href="" class="portfolio__filter-link">Illustrations</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="row">
+                    <div class="col-1-of-3 grid-item web-design">
+                        <div class="portfolio__wrapper">
+                            <div class="portfolio__box">
+
+                                <img src="./img/portfolio/client-logos/toro-logo.png" alt="toro logo">
+                                <div class="portfolio__box-gif portfolio__box-gif--toro"></div>
+                            </div>
+                            <a target="_blank" href="http://bateriastoro.com.uy" class="btn btn--white">Ver mas &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="col-1-of-3 grid-item web-design">
+                        <div class="portfolio__wrapper">
+                            <div class="portfolio__box">
+
+                                <img src="./img/portfolio/client-logos/st-logo.png" alt="st logo">
+
+                                <div class="portfolio__box-gif portfolio__box-gif--st"></div>
+                            </div>
+                            <a target="_blank" href="http://stecnicos.com.uy" class="btn btn--white">Ver mas &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="col-1-of-3 grid-item web-design">
+                        <div class="portfolio__wrapper">
+                            <div class="portfolio__box">
+
+                                <img src="./img/portfolio/client-logos/wl-logo.png" alt="wl logo">
+
+                                <div class="portfolio__box-gif portfolio__box-gif--wl"></div>
+                            </div>
+                            <a target="_blank" href="https://weblabuy.000webhostapp.com/" class="btn btn--white">Ver mas &rarr;</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+                    <div class="col-1-of-3 grid-item web-design">
+                        <div class="portfolio__wrapper">
+                            <div class="portfolio__box">
+
+                                <img src="./img/portfolio/client-logos/you-logo.png" alt="wl logo">
+
+                                <div class="portfolio__box-gif portfolio__box-gif--you"></div>
+                            </div>
+                            <a target="_blank" href="https://youfitnessarea.000webhostapp.com/" class="btn btn--white">Ver mas &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="col-1-of-3 grid-item web-design">
+                        <div class="portfolio__wrapper">
+                            <div class="portfolio__box">
+
+                                <img src="./img/portfolio/client-logos/omni-logo.png" alt="wl logo">
+
+                                <div class="portfolio__box-gif portfolio__box-gif--omni"></div>
+                            </div>
+                            <a target="_blank" href="https://omnifood.000webhostapp.com/" class="btn btn--white">Ver mas &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="col-1-of-3 grid-item web-apps">
+                        <div class="portfolio__wrapper">
+                            <div class="portfolio__box portfolio__box--st">
+                            </div>
+                            <a href="https://youtu.be/v8T69YGwwuE" class="btn btn--white html5lightbox">Ver mas &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-1-of-3 grid-item web-apps">
+                        <div class="portfolio__wrapper">
+                            <div class="portfolio__box portfolio__box--mocca">
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=2Qd_UXdI-gE" class="btn btn--white html5lightbox">Ver mas &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="col-1-of-3 grid-item illustrator">
+                        <div class="portfolio__wrapper">
+                            <div class="portfolio__box portfolio__box--fgr">
+                            </div>
+                            <a href="img/portfolio/illustrator/fishGoldenRatio.png" class="btn btn--white html5lightbox">Ver mas &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="col-1-of-3 grid-item illustrator">
+                        <div class="portfolio__wrapper">
+                            <div class="portfolio__box portfolio__box--mdeo">
+                            </div>
+                            <a href="img/portfolio/illustrator/montevideo.png" class="btn btn--white html5lightbox">Ver mas &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-1-of-3 grid-item illustrator">
+                        <div class="portfolio__wrapper">
+                            <div class="portfolio__box portfolio__box--mocai">
+                            </div>
+                            <a href="img/portfolio/illustrator/mocca.png" class="btn btn--white html5lightbox">Ver mas &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="col-1-of-3 grid-item illustrator">
+                        <div class="portfolio__wrapper">
+                            <div class="portfolio__box portfolio__box--workflow">
+                            </div>
+                            <a href="img/portfolio/illustrator/workflow.png" class="btn btn--white html5lightbox">Ver mas &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="col-1-of-3 grid-item illustrator">
+                        <div class="portfolio__wrapper">
+                            <div class="portfolio__box portfolio__box--space">
+                            </div>
+                            <a href="img/portfolio/illustrator/space.png" class="btn btn--white html5lightbox">Ver mas &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+
+        </section>
+
+        <section id="contact-me" class="contact js--wp-contact">
+            <div class="row">
+                <div class="col-4-of-4">
+                    <div class="u-padding-top-big">
+                        <h2 class="heading-secondary ">
+                            Contact me
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="bird bird--left"></div>
+                <div class="bird bird--right"></div>
+                <div class="form-wrapper">
+                    <form action="#" class="form">
+                        <div class="form__group">
+
+                            <input type="text" class="form__input" placeholder="Name" id="name" required/>
+                            <label for="name" class="form__label">Name</label>
+                        </div>
+                        <div class="form__group">
+                            <input type="email" class="form__input" placeholder="Email Address" id="email" required/>
+                            <label for="email" class="form__label">Email</label>
+                        </div>
+                        <div class="form__group">
+                            <textarea class="form__input " placeholder="Message" id="message" required></textarea>
+                            <label for="message" class="form__label form__label--ta">Message</label>
+                        </div>
+
+
+                        <div class="form__group u-center-text">
+                            <button type="submit" class="button btn btn--green">Send message </div>
+                </div>
+                </form>
+
+
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__logo-box">
+            <img src="img/jm-logo-green.png" alt="logo footer" class="footer__logo">
+        </div>
+
+        <div class="row">
+            <div class="col-1-of-2 u-center-text">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#home" class="footer__link">Home</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#about-me" class="footer__link">About me</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#work-experience" class="footer__link">About me</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#skills" class="footer__link">Skills</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#portfolio" class="footer__link">Portfolio</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#contact-me" class="footer__link">Contact me</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <div class="footer__copyright">
+                    Built by
+                    <a href="#" class="footer__link">Jorge Moller</a>.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/vendors/jquery.min.js"></script>
+    <script src="js/vendors/jquery.waypoints.min.js"></script>
+    <script src="js/vendors/html5lightbox.js"></script>
+    <script src="js/vendors/isotope.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,169 @@
+.portfolio {
+  &__wrapper {
+    position: relative;
+    height: 28rem;
+    text-align: center;
+    max-width: 27.3rem;
+    margin: auto;
+    margin-bottom: 2.5rem;
+
+    // Animation for the see more button
+    &:hover .btn {
+      top: 90%;
+      z-index: 1;
+
+      @include respond(desktop) {
+        top: 75%;
+        padding: 1.5rem 2rem;
+        font-size: 1.2rem;
+      }
+    }
+
+    // When hovering the wrapper we change the background from static image to gif
+    &:hover .portfolio__box-gif--toro {
+      background: url("../img/portfolio/client-gif/toro.gif");
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+
+    &:hover .portfolio__box-gif--st {
+      background: url("../img/portfolio/client-gif/st.gif");
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+
+    &:hover .portfolio__box-gif--wl {
+      background: url("../img/portfolio/client-gif/wl.gif");
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+
+    &:hover .portfolio__box-gif--you {
+      background: url("../img/portfolio/client-gif/you.gif");
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+
+    &:hover .portfolio__box-gif--omni {
+      background: url("../img/portfolio/client-gif/omni.gif");
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+
+    // Client logo
+    & img {
+      position: absolute;
+      height: 7.5rem;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -40%);
+      z-index: 1;
+
+      @include respond(desktop) {
+        height: 6rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .btn {
+      margin-top: 2rem;
+
+      @include respond(desktop) {
+        position: absolute;
+        left: 50%;
+        top: 20%;
+        transform: translate(-50%, 0%);
+        z-index: -10;
+      }
+    }
+  }
+
+  &__box {
+    min-height: 20rem;
+    background: $color-white;
+    border-radius: 1rem;
+    box-shadow: $shadow-black-light;
+    overflow: hidden;
+    position: relative;
+
+    &--st {
+      background-image: url('../img/portfolio/client-bg/bg-st.png');
+      @include bgIllustrator;
+    }
+
+    &--mocca {
+      background-image: url('../img/portfolio/client-bg/bg-mocca.png');
+      @include bgIllustrator;
+    }
+
+    &--fgr {
+      background-image: url('../img/portfolio/illustrator/fishGoldenRatio.png');
+      @include bgIllustrator;
+    }
+
+    &--mdeo {
+      background-image: url('../img/portfolio/illustrator/montevideo.png');
+      @include bgIllustrator;
+    }
+
+    &--mocai {
+      background-image: url('../img/portfolio/illustrator/mocca.png');
+      @include bgIllustrator;
+    }
+
+    &--workflow {
+      background-image: url('../img/portfolio/illustrator/workflow.png');
+      @include bgIllustrator;
+    }
+
+    &--space {
+      background-image: url('../img/portfolio/illustrator/space.png');
+      @include bgIllustrator;
+    }
+
+    @include respond(big-desktop) {
+      background-image: url(../img/mac-mockup.png);
+      background-size: contain;
+      background-position: bottom;
+      background-repeat: no-repeat;
+    }
+
+    &-gif {
+      height: 11.6rem;
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      position: absolute;
+      bottom: 0;
+
+      @include respond(big-desktop) {
+        top: 60%;
+        left: 19%;
+        width: 17.3rem;
+      }
+    }
+
+    // Gif styles are in mixin portfolioGif
+    &-gif--toro {
+      @include portfolioBackground(toro);
+    }
+
+    &-gif--st {
+      @include portfolioBackground(st);
+    }
+
+    &-gif--wl {
+      @include portfolioBackground(wl);
+    }
+
+    &-gif--you {
+      @include portfolioBackground(you);
+    }
+
+    &-gif--omni {
+      @include portfolioBackground(omni);
+    }
+  }
+}

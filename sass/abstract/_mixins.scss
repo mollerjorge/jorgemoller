@@ -1,0 +1,91 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin paragraph {
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  color: $color-grey-dark;
+  text-align: justify;
+  font-weight: 300;
+  line-height: 3.3rem;
+}
+
+
+
+@mixin horizontal-period-line {
+  content: "";
+  display: block;
+  width: 35%;
+  background-image: url(../img/ivy-plant-mobile.svg);
+  background-size: cover;
+  height: 20rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -40%);
+
+  @include respond(desktop) {
+    background-image: url(../img/ivy-plant.svg);
+    left: 2rem;
+    transform: translate(0%, 0%);
+    width: 93%;
+  }
+
+  @include respond(big-desktop) {
+    left: 10rem;
+    transform: translate(0%, 0%);
+    width: 80%;
+  }
+}
+
+@mixin firstLetterBorderBottom($color) {
+  color: $color;
+  border-bottom: 0.5rem solid $color;
+  font-weight: 500;
+}
+
+
+@mixin portfolioGif($clientName) {
+  background: url("../img/portfolio/client-bg/"+$clientName+"-bg.png");
+  background-size: cover;
+}
+
+@mixin portfolioBackground($clientName) {
+  background: url("../img/portfolio/client-gif/"+ $clientName +".gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(1px);
+
+  @include respond(big-desktop) {
+    background-size: contain;
+    filter: blur(0px);  
+  }
+}
+
+@mixin centerContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin respond($breakPoint) {
+  @if $breakPoint == tab-port {
+    @media (min-width: 37.5em) {@content} // 600px 
+  }
+  @if $breakPoint == desktop {
+    @media (min-width: 56.25em) {@content} // 900px 
+  }
+  @if $breakPoint == big-desktop {
+    @media (min-width: 93.75em) {@content} // 1200px 
+  }
+}
+
+@mixin bgIllustrator {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
