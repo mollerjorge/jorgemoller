@@ -791,18 +791,19 @@
                 <div class="bird bird--left"></div>
                 <div class="bird bird--right"></div>
                 <div class="form-wrapper">
-                    <form action="#" class="form">
+                    <form action="https://formspree.io/jmoller2106@gmail.com"
+                    method="POST" class="form">
                         <div class="form__group">
-
-                            <input type="text" class="form__input" placeholder="Name" id="name" required/>
+                                <input type="hidden" name="_next" value="http://jorgemoller.com/thankyou.html" />
+                            <input name="name" type="text" class="form__input" placeholder="Name" id="name" required/>
                             <label for="name" class="form__label">Name</label>
                         </div>
                         <div class="form__group">
-                            <input type="email" class="form__input" placeholder="Email Address" id="email" required/>
+                            <input name="email" type="email" class="form__input" placeholder="Email Address" id="email" required/>
                             <label for="email" class="form__label">Email</label>
                         </div>
                         <div class="form__group">
-                            <textarea class="form__input " placeholder="Message" id="message" required></textarea>
+                            <textarea name="message" class="form__input " placeholder="Message" id="message" required></textarea>
                             <label for="message" class="form__label form__label--ta">Message</label>
                         </div>
 
