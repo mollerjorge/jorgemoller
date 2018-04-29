@@ -9,6 +9,14 @@
     }
   }
 
+  &__button {
+    display: none;
+
+    @include respond(desktop) {
+      display: block;
+    }
+  }
+
   &::after {
     @include horizontal-period-line;
   }
