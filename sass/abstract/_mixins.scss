@@ -36,9 +36,10 @@
   }
 
   @include respond(big-desktop) {
-    left: 10rem;
+    left: 25rem;
     transform: translate(0%, 0%);
-    width: 80%;
+    width: 65%;
+    
   }
 }
 
@@ -83,6 +84,8 @@
   @if $breakPoint == big-desktop {
     @media (min-width: 93.75em) {@content} // 1200px 
   }
+
+  
 }
 
 @mixin bgIllustrator {

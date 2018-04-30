@@ -123,12 +123,7 @@
       @include bgIllustrator;
     }
 
-    @include respond(big-desktop) {
-      background-image: url(../img/mac-mockup.png);
-      background-size: contain;
-      background-position: bottom;
-      background-repeat: no-repeat;
-    }
+    
 
     &-gif {
       height: 11.6rem;
@@ -139,9 +134,9 @@
       bottom: 0;
 
       @include respond(big-desktop) {
-        top: 60%;
-        left: 19%;
-        width: 17.3rem;
+        
+        
+        width: 150%;
       }
     }
 
