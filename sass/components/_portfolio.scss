@@ -98,6 +98,11 @@
       @include bgIllustrator;
     }
 
+    &--nova {
+      background-image: url('../img/portfolio/client-bg/bg-nova.jpg');
+      @include bgIllustrator;
+    }
+
     &--fgr {
       background-image: url('../img/portfolio/illustrator/fishGoldenRatio.png');
       @include bgIllustrator;
