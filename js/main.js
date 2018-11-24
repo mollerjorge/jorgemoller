@@ -6,7 +6,6 @@ $(document).ready(function() {
         this.pathname.replace(/^\//, "") &&
       location.hostname == this.hostname
     ) {
-      debugger;
       var target = $(this.hash);
 
       if (target.length) {
@@ -45,7 +44,7 @@ $(document).ready(function() {
   /* Work experience animations */
   $(".js--wp-2").waypoint(
     function(direction) {
-      $(".js--wp-2").addClass("animated fadeInRight");
+      $(".js--wp-2").addClass("animated fadeIn");
     },
     {
       offset: "40%"
@@ -54,7 +53,7 @@ $(document).ready(function() {
 
   $(".js--wp-3").waypoint(
     function(direction) {
-      $(".js--wp-3").addClass("animated fadeInLeft");
+      $(".js--wp-3").addClass("animated fadeIn");
     },
     {
       offset: "40%"
@@ -63,7 +62,7 @@ $(document).ready(function() {
 
   $(".js--wp-4").waypoint(
     function(direction) {
-      $(".js--wp-4").addClass("animated fadeInRight");
+      $(".js--wp-4").addClass("animated fadeIn");
     },
     {
       offset: "40%"
@@ -72,7 +71,7 @@ $(document).ready(function() {
 
   $(".js--wp-5").waypoint(
     function(direction) {
-      $(".js--wp-5").addClass("animated fadeInLeft");
+      $(".js--wp-5").addClass("animated fadeIn");
     },
     {
       offset: "40%"
@@ -81,7 +80,7 @@ $(document).ready(function() {
 
   $(".js--wp-6").waypoint(
     function(direction) {
-      $(".js--wp-6").addClass("animated fadeInRight");
+      $(".js--wp-6").addClass("animated fadeIn");
     },
     {
       offset: "40%"

@@ -36,10 +36,14 @@
   }
 
   @include respond(big-desktop) {
-    left: 25rem;
+    left: 32rem;
     transform: translate(0%, 0%);
-    width: 65%;
-    
+    width: 58%;
+  }
+
+  @include respond(large-desktop) {
+    left: 60rem;
+    width: 45%;
   }
 }
 
@@ -84,7 +88,9 @@
   @if $breakPoint == big-desktop {
     @media (min-width: 93.75em) {@content} // 1200px 
   }
-
+  @if $breakPoint == large-desktop {
+    @media (min-width: 2560px) {@content} 
+  }
   
 }
 

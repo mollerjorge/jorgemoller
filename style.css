@@ -1,0 +1,45 @@
+body {
+  background: #ffffff; 
+  font-family: 'Lato', sans-serif;
+}
+
+img.logo {
+  height: 10rem;
+  max-height: 10rem;
+}
+
+nav.navbar {
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h3.question {
+  
+  font-size: 1.3rem;
+}
+h1,h2,h3 {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+p.answer {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+ul.list {
+  font-size: 1.3rem;
+  text-align: center;
+  list-style: none;
+  margin-top: 0;
+  box-shadow: none;
+  border: none;
+}
